@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #5995DA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: var(--primary-color);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  background-color: #B2D6FF;
+  height: 200px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content section {
+  height: 300px;
+}
+
+.feature1 {
+  background-color: #F5CF8E;
+}
+
+.feature2 {
+  background-color: #F09A9D;
+}
+
+.feature3 {
+  background-color: #C8C6FA;
+}
+
+.signup {
+  background-color: #D6E9FE;
+  height: 50px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .content {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  section {
+    width: 33.33%;
+  }
+
+  nav {
+    order: 2;
+  }
+}
